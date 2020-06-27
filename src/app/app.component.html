@@ -43,11 +43,40 @@
       </button>
     </div>
     <div class="painel-dias">
+      <div fxLayout="row">
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>DOMINGO</span>
+        </div>
+        <mat-divider vertical="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>SEGUNDA</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>TERÇA</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>QUARTA</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>QUINTA</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>SEXTA</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div class="dia-semana" fxLayoutAlign="center center">
+          <span>SABADO</span>
+        </div>
+      </div>
       <ol class="list-unstyled" fxLayout="column">
         <li *ngFor="let cols of rows" fxLayout="row" fxLayoutAlign="start stretch">
           <mat-card *ngFor="let dia of cols" class="dia-mes">
             <mat-card fxLayoutAlign="center center" class="dia">
-                <span>12</span>
+              <span>12</span>
             </mat-card>
             <mat-divider></mat-divider>
             <mat-card class="lista-eventos">

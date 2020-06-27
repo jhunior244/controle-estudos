@@ -25,11 +25,11 @@ export class AppComponent implements OnInit {
     listaEventos.push(evento);
 
     let diaCalendario: DiaCalendario = { data: moment(), listaEvento: listaEventos };
-    const listaDiaCalendario: DiaCalendario[] = [];
+    const listaDiaCalendario: DiaCalendario[] = []; 
 
     listaDiaCalendario.push(diaCalendario);
     listaDiaCalendario.push(diaCalendario);
-    listaDiaCalendario.push(diaCalendario);
+    listaDiaCalendario.push(diaCalendario); 
     listaDiaCalendario.push(diaCalendario);
     listaDiaCalendario.push(diaCalendario);
     listaDiaCalendario.push(diaCalendario);
